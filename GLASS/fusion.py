@@ -1,3 +1,8 @@
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import math
+
 class MultiAspectGCAttention(nn.Module):
     """
     Simplified re-implementation of the GLASS Global-to-Local Attention fusion module. Focuses on core logic: channel interleaving, spatial GC attention, and configurable fusion.
